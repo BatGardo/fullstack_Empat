@@ -1,0 +1,10 @@
+@media (min-width: 1024px) {
+
+  .nav {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 56px;
+  }
+}

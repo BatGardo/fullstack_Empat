@@ -1,0 +1,256 @@
+/* #region FONTS */
+@font-face {
+    font-family: "Ethnocentric";
+    src: url(fonts/ethnocentric-regular.ttf);
+}
+
+@font-face {
+    font-family: "Oxanium";
+    src: url(fonts/Oxanium-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+/* #endregion */
+
+@media (max-width: 1024px) {
+
+    /* RESET */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* BASE */
+    body {
+        font-family: 'Oxanium', sans-serif;
+        color: #ffffff;
+        background: #fff;
+        line-height: 1.5;
+        background-image: url('images/Background_body.png');
+        background-repeat: repeat;
+        background-position: top left;
+        background-size: auto;
+    }
+
+    /* #region HEADER */
+    .header {
+        font-family: 'Ethnocentric', sans-serif;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    .burger {
+        position: relative;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    /* #endregion */
+
+    /* #region HERO */
+    .hero {
+        min-height: 100vh;
+        padding: 0px 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: url("images/BackImageHero.png") center / cover no-repeat;
+        color: white;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 420px;
+    }
+
+    .hero h1 {
+        font-family: 'Ethnocentric', sans-serif;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-family: 'Oxanium', sans-serif;
+        margin: 16px 0 24px;
+        font-size: 16px;
+    }
+
+    /* #endregion */
+
+    /* #region BUTTONS */
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+        padding: 10px 14px;
+
+        background-color: #EAB22E;
+        border: none;
+        border-radius: 24px;
+
+
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .btn-enlist {
+        font-family: 'Ethnocentric';
+        font-size: 16px;
+        padding-top: 16px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .btn-clear {
+        padding: 2%;
+        border-radius: 0;
+    }
+
+    .btn img {
+        width: 24px;
+        height: auto;
+        max-width: 100%;
+        width: clamp(100px, 6vw, 40px);
+        height: auto;
+    }
+
+    .actions-column .btn {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+    }
+
+    /* #endregion */
+
+    /* #region INFO */
+    .info {
+        padding: 40px 20px;
+    }
+
+    .info h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .info-card {
+        margin-bottom: 32px;
+    }
+
+    .info-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .info-card p {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .highlight {
+        color: #EAB22E;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .actions-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: nowrap;
+    }
+
+    .actions-row-wraped {
+        flex-wrap: wrap;
+    }
+
+    .actions-row-wraped img{
+        max-width: 40px;
+        height: auto;
+    }
+
+    .actions-row>img {
+        width: clamp(120px, 40vw, 220px);
+        height: auto;
+        flex-shrink: 0;
+    }
+
+
+    .actions-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* #endregion */
+
+    /* FOOTER */
+
+    .prefooter {
+        background-color: rgba(0, 0, 0, 0.44);
+    }
+
+    .footer {
+        background-color: rgba(0, 0, 0, 0.44);
+        padding: 24px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .footer .info-card {
+        font-size: 12px;
+    }
+
+    .footer .smaller60 {
+        text-align: center;
+        width: 60%;
+        height: auto;
+    }
+
+    .footer .smaller40 {
+        text-align: center;
+        width: 40%;
+        height: auto;
+    }
+
+}
