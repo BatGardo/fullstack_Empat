@@ -59,7 +59,7 @@
         background: rgba(0, 0, 0, 0.9);
     }
 
-    #header + .info {
+    #header+.info {
         padding-top: 120px;
     }
 
@@ -105,7 +105,7 @@
         text-align: center;
         color: white;
     }
-    
+
 
     .hero.index-bg {
         background: url("../images/BackImageHero.png") center / cover no-repeat;
@@ -180,6 +180,10 @@
     /* INFO */
     .info {
         padding: 60px 88px;
+    }
+
+    .info:first-of-type {
+        padding-top: 120px;
     }
 
     .info>* {
