@@ -16,6 +16,10 @@
         display: block;
     }
 
+    .mobile {
+        display: none;
+    }
+
     /* RESET */
     * {
         box-sizing: border-box;
@@ -29,7 +33,7 @@
         color: #ffffff;
         background: #fff;
         line-height: 1.5;
-        background-image: url('images/Background_body.png');
+        background-image: url('../images/Background_body.png');
         background-repeat: repeat;
         background-position: top left;
         background-size: auto;
@@ -46,13 +50,17 @@
     /* HEADER */
     .header {
         font-family: 'Ethnocentric', sans-serif;
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 100;
         display: flex;
         align-items: center;
         padding: 24px 32px;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    #header + .info {
+        padding-top: 120px;
     }
 
     .nav {
@@ -82,17 +90,29 @@
         display: none;
     }
 
+    .burger-menu {
+        display: none;
+    }
+
     /* HERO */
     .hero {
         min-height: 100vh;
-        padding: 0 80px;
+        padding: 0px 20px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: url("images/BackImageHero.png") center / cover no-repeat;
         color: white;
+    }
+    
+
+    .hero.index-bg {
+        background: url("../images/BackImageHero.png") center / cover no-repeat;
+    }
+
+    .hero.community-bg {
+        background: url("../images/community/HeroBackCommunity.png") center / cover no-repeat;
     }
 
     .hero::before {
@@ -298,6 +318,19 @@
 
     .footer .info-card {
         font-size: 16px;
+    }
+
+    .footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1em 0;
+    }
+
+    .footer ul li {
+        font-family: 'Oxanium', sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 0.5em;
     }
 
     /* ONLY FOR DESKTOP */
