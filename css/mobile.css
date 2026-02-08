@@ -1,12 +1,12 @@
 /* #region FONTS */
 @font-face {
     font-family: "Ethnocentric";
-    src: url(fonts/ethnocentric-regular.ttf);
+    src: url(./fonts/ethnocentric-regular.ttf);
 }
 
 @font-face {
     font-family: "Oxanium";
-    src: url(fonts/Oxanium-VariableFont_wght.ttf);
+    src: url(./fonts/Oxanium-VariableFont_wght.ttf);
     font-style: normal;
 }
 
