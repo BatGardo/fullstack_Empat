@@ -12,7 +12,28 @@
 <body>
 
     <!-- HEADER -->
-    <div id="header"></div>
+    <header class="header">
+        <a href="../index.html"><img src="../images/Helldivers-2-Logo-PNG 1.png" alt="Logo" class="logo desktop"></a>
+        <button class="burger" aria-label="Menu" id="burger-btn">☰</button>
+
+        <nav class="nav desktop">
+            <a href="communityPage.html">Community</a>
+            <a href="weaponary.html">Weaponary</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+        </nav>
+
+        <a href="enlist.html" class="btn btn-enlist header-action desktop">Enlist now</a>
+    </header>
+
+    <nav class="burger-menu" id="burger-menu">
+        <a href="../index.html"><img src="../images/Helldivers-2-Logo-PNG 1.png" alt="Logo" class="logo"></a>
+        <a href="communityPage.html">Community</a>
+        <a href="weaponary.html">Weaponary</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="enlist.html" class="btn btn-enlist">Enlist now</a>
+    </nav>
 
     <section class="info">
         <h2>When the Galaxy Was Burning, Helldivers Chose Children</h2>
@@ -47,6 +68,7 @@
     <section class="info">
         <h2>What Happened Next</h2>
         <div class="info-row">
+            <img src="../images/community/CommunityChoice/ThankYouHelldiversClear.png" alt="" class="desktop">
             <div class="info-card lefted">
                 <p>Moved by the community’s decision, Arrowhead Game Studios made a <span class="highlight"> real-world
                         donation</span> to a children’s shelter.</p>
@@ -54,7 +76,7 @@
                 <p>A small in-game decision became a powerful real-world act.</p>
             </div>
             <div class="info-card centered">
-                <img src="../images/community/CommunityChoice/ThankYouHelldiversClear.png" alt="">
+                <img src="../images/community/CommunityChoice/ThankYouHelldiversClear.png" alt="" class="mobile">
             </div>
         </div>
     </section>
@@ -92,10 +114,64 @@
     </section>
     <!-- #endregion -->
 
-    <div id="footer"></div>
+    <!-- #region PreFooter  -->
+    <section class="info prefooter">
+        <div class="actions-row actions-row-wraped">
+            <p class="desktop">Our social media</p>
+            <button class="btn btn-clear"><img src="../images/LogoTiktokSmall.png" alt=""></button>
+            <button class="btn btn-clear"><img src="../images/LogoYoutubeSmall.png" alt=""></button>
+            <button class="btn btn-clear"><img src="../images/LogoFacebookSmall.png" alt=""></button>
+            <button class="btn btn-clear"><img src="../images/LogoTwitterSmall.png" alt=""></button>
+            <button class="btn btn-clear"><img src="../images/LogoDiscordSmall.png" alt=""></button>
+            <button class="btn btn-clear"><img src="../images/LogoLinkedinSmall.png" alt=""></button>
+            <p class="desktop">Enlist</p>
+            <button class="btn btn-clear desktop"><img src="../images/LogoSteam.png" alt=""></button>
+            <button class="btn btn-clear desktop"><img src="../images/LogoPlaystation.png" alt=""></button>
+            <button class="btn btn-clear desktop"><img src="../images/LogoXbox.png" alt=""></button>
+        </div>
+    </section>
+    <!-- #endregion -->
 
-    <script type="module" src="../js/main.js" defer></script>
+    <!-- #region Footer -->
+    <footer class="footer">
+        <div class="info-card info-row">
+            <div class="info-cards lefted">
+                <div class="info-row">
+                    <img src="../images/Helldivers-2-Logo-PNG 1.png" alt="" class="smaller60">
+                    <p>This is a fan-made project inspired by Helldivers 2 and its incredible community.
+                        It is created with love, respect, and unwavering loyalty to Super Earth. </p>
+                </div>
+                <p>
+                    Citizens who attempted to spread doubt, criticism, or disloyal opinions have been reported to the
+                    nearest
+                    Democracy Officer.
+                </p>
 
+                <p>Remember:</p>
+                <ul>
+                    <li>Dissent is dangerous.</li>
+                    <li>Silence is patriotic.</li>
+                    <li>Obedience is freedom.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="info-cards lefted">
+                <img src="../images/LogoMOT.png" alt="" class="smaller40">
+                <p>
+                    All materials on this page have been carefully reviewed and approved by the Ministry of Truth.
+                </p>
+                <ul>
+                    <li>Any inaccuracies have been corrected.</li>
+                    <li>Any misinformation has been eliminated.</li>
+                    <li>Any negative feedback has been classified as treason.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- #endregion -->
+
+    <!-- <script type="module" src="../js/main.js" defer></script> -->
+    <script src="../js/burger.js"></script>
 </body>
 
 </html>

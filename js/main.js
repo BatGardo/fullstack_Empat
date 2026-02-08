@@ -4,15 +4,15 @@ function loadPart(id, file, callback) {
         return;
     fetch(file)
         .then(response => {
-        if (!response.ok)
-            throw new Error(`Failed to load ${file}`);
-        return response.text();
-    })
+            if (!response.ok)
+                throw new Error(`Failed to load ${file}`);
+            return response.text();
+        })
         .then(html => {
-        container.innerHTML = html;
-        if (callback)
-            callback();
-    })
+            container.innerHTML = html;
+            if (callback)
+                callback();
+        })
         .catch(err => console.error(err));
 }
 function initBurgerMenu() {
@@ -34,8 +34,16 @@ function initBurgerMenu() {
     });
     menu.addEventListener('click', (e) => e.stopPropagation());
 }
+function getBasePath() {
+    const path = window.location.pathname;
+    if (path.includes('/pages/')) {
+        return '../';
+    }
+    return '';
+}
 document.addEventListener('DOMContentLoaded', () => {
-    loadPart('header', 'partials/header.html', initBurgerMenu);
-    loadPart('footer', 'partials/footer.html');
+    const base = getBasePath();
+    loadPart('header', base + 'partials/header.html', initBurgerMenu);
+    loadPart('footer', base + 'partials/footer.html');
 });
-export {};
+export { };

@@ -1,12 +1,12 @@
 /* #region FONTS */
 @font-face {
     font-family: "Ethnocentric";
-    src: url(fonts/ethnocentric-regular.ttf);
+    src: url(../fonts/ethnocentric-regular.ttf);
 }
 
 @font-face {
     font-family: "Oxanium";
-    src: url(fonts/Oxanium-VariableFont_wght.ttf);
+    src: url(../fonts/Oxanium-VariableFont_wght.ttf);
     font-style: normal;
 }
 
@@ -59,7 +59,7 @@
         background: rgba(0, 0, 0, 0.9);
     }
 
-    #header + .info {
+    #header+.info {
         padding-top: 120px;
     }
 
@@ -105,7 +105,7 @@
         text-align: center;
         color: white;
     }
-    
+
 
     .hero.index-bg {
         background: url("../images/BackImageHero.png") center / cover no-repeat;
@@ -182,6 +182,10 @@
         padding: 60px 88px;
     }
 
+    .info:first-of-type {
+        padding-top: 120px;
+    }
+
     .info>* {
         max-width: 100%;
     }
@@ -191,6 +195,7 @@
     }
 
     .info h2 {
+        font-family: 'Ethnocentric', sans-serif;
         font-size: 32px;
         text-align: center;
         margin-bottom: 32px;
