@@ -35,7 +35,7 @@ function initBurgerMenu() {
     menu.addEventListener('click', (e) => e.stopPropagation());
 }
 document.addEventListener('DOMContentLoaded', () => {
-    loadPart('header', 'partials/header.html', initBurgerMenu);
-    loadPart('footer', 'partials/footer.html');
+    loadPart('header', '/fullstack_Empat/partials/header.html', initBurgerMenu);
+    loadPart('footer', '/fullstack_Empat/partials/footer.html');
 });
 export {};
