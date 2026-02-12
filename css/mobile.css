@@ -68,13 +68,13 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 250px;
+        width: 310px;
         height: 100vh;
         background: rgba(0, 0, 0, 0.95);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 24px;
         z-index: 999;
         padding: 0 20px;
@@ -84,11 +84,17 @@
     }
 
     .burger-menu a {
-        color: white;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-family: 'Ethnocentric', sans-serif;
         font-size: 24px;
         text-align: center;
+    }
+
+    nav a.btn{
+        color: black;
+        align-self: center;
+        border-radius: 42px;
     }
 
     .burger-menu img {
@@ -127,10 +133,11 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.55);
+        background: rgba(0, 0, 0,);
     }
 
     .hero-content {
+        padding-top: 168px;
         position: relative;
         z-index: 1;
         max-width: 420px;
@@ -172,12 +179,18 @@
 
     .btn-enlist {
         font-family: 'Ethnocentric';
-        font-size: 16px;
+        font-size: 24px;
         padding-top: 16px;
         color: black;
         text-decoration: none;
         text-align: center;
         justify-content: center;
+    }
+
+    .hero .btn-enlist{
+        min-height: 88px;
+        min-width: 240px;
+        border-radius: 36px;
     }
 
     .btn-clear {
