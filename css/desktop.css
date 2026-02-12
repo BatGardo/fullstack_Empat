@@ -96,7 +96,7 @@
 
     /* HERO */
     .hero {
-        min-height: 100vh;
+        min-height: 150vh;
         padding: 0px 20px;
         position: relative;
         display: flex;
@@ -119,13 +119,14 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.55);
+        background: rgba(0, 0, 0,);
     }
 
     .hero-content {
+        padding-top: 178px;
         position: relative;
         z-index: 1;
-        max-width: 800px;
+        /* max-width: 800px; */
     }
 
     .hero h1 {
@@ -160,6 +161,13 @@
         font-size: 18px;
         color: black;
         text-decoration: none;
+    }
+
+    .hero .btn-enlist{
+        min-height: 142px;
+        min-width: 542px;
+        border-radius: 36px;
+        font-size: 48px;
     }
 
     .btn-clear {
@@ -231,9 +239,10 @@
     }
 
     .info-row>img {
-        max-width: 480px;
+        max-width: 660px; 
         height: auto;
-        flex-shrink: 0;
+        /* flex-shrink: 0; */
+        width: 80%;
     }
 
     .info-cards {
@@ -336,6 +345,7 @@
         font-size: 12px;
         line-height: 1.5;
         margin-bottom: 0.5em;
+        text-align: left;
     }
 
     /* ONLY FOR DESKTOP */
